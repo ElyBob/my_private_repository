@@ -1,18 +1,51 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: LarryL
- * Date: 11/28/2018
- * Time: 5:58 PM
- */
- class draw
- {
-     static public function bluestar() {
-         echo '     __.-._' . '<br>';
-         echo '     \'-._"7\'' . '<br>' ;
-         echo '      /\'.-c' . '<br>';
-         echo '      |  /T' . '<br>';
-         echo '     _)_/LI' . '<br>';
-     }
- }
-?>
+
+<style type="text/css">
+    /* http://css-tricks.com/examples/ShapesOfCSS/ */
+#star5 {
+    margin: 50px 0;
+ position: relative;
+ display: block;
+ width: 0px;
+ height: 0px;
+ border-right: 100px solid transparent;
+ border-bottom: 70px solid #00f;
+ border-left: 100px solid transparent;
+ -moz-transform: rotate(35deg);
+ -webkit-transform: rotate(35deg);
+ -ms-transform: rotate(35deg);
+ -o-transform: rotate(35deg);
+}
+#star5:before {
+ border-bottom: 80px solid #00f;
+ border-left: 30px solid transparent;
+ border-right: 30px solid transparent;
+ position: absolute;
+ height: 0;
+ width: 0;
+ top: -45px;
+ left: -65px;
+ display: block;
+ content:"";
+ -webkit-transform: rotate(-35deg);
+ -moz-transform: rotate(-35deg);
+ -ms-transform: rotate(-35deg);
+ -o-transform: rotate(-35deg);
+}
+#star5:after {
+ position: absolute;
+ display: block;
+ top: 3px;
+ left: -105px;
+ width: 0px;
+ height: 0px;
+ border-right: 100px solid transparent;
+ border-bottom: 70px solid #00f;
+ border-left: 100px solid transparent;
+ -webkit-transform: rotate(-70deg);
+ -moz-transform: rotate(-70deg);
+ -ms-transform: rotate(-70deg);
+ -o-transform: rotate(-70deg); content:"";
+}
+</style>
+
+<div id="star5"></div>
